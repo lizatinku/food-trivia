@@ -52,7 +52,7 @@ const HomePage: React.FC = () => {
       color: 'tan',
       margin: 0, 
     }}>
-      <h1 style={{ margin: 0 }}>Welcome to the Indian Food Trivia Challenge! 🍛</h1>
+      <h1 style={{ margin: 0 }}>Welcome to the Indian Food Trivia!</h1>
       <div style={{ marginTop: '2rem' }}>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
           <img src="/images/idli.jpg" alt="Idli" style={{ width: '150px', height: 'auto', borderRadius: '10px' }} />
@@ -78,11 +78,17 @@ const HomePage: React.FC = () => {
               <button onClick={() => startCategoryQuiz('popular-dishes')} className="neon-button">
                 Popular Dishes
               </button>
-              <button onClick={() => startCategoryQuiz('east-and-north-east-dishes')} className="neon-button">
-                Eastern and North Eastern Dishes
+              <button onClick={() => startCategoryQuiz('east-and-north-east-cuisine')} className="neon-button">
+                Eastern and North Eastern Cuisine
+              </button>
+              <button onClick={() => startCategoryQuiz('west-indian-cuisine')} className="neon-button">
+                West Indian Cuisine
               </button>
               <button onClick={() => startCategoryQuiz('desserts-and-sweets')} className="neon-button">
                 Desserts and Sweets
+              </button>
+              <button onClick={() => startCategoryQuiz('beverages')} className="neon-button">
+                Beverages
               </button>
             </div>
           </div>

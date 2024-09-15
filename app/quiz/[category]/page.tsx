@@ -45,16 +45,16 @@ const QuizPage: React.FC = () => {
   const nextQuestion = () => {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(currentIndex + 1);
-      setSelectedOption(null); // Reset selection
-      setFeedback(null); // Reset feedback
+      setSelectedOption(null); 
+      setFeedback(null);
     }
   };
 
   const previousQuestion = () => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
-      setSelectedOption(null); // Reset selection
-      setFeedback(null); // Reset feedback
+      setSelectedOption(null);
+      setFeedback(null);
     }
   };
 

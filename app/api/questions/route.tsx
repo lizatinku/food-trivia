@@ -107,7 +107,7 @@ export async function GET(request: Request) {
         answer: 'Punjab - Sarson Da Saag'
       }
     ],
-    'east-and-north-east-dishes': [
+    'eastern-and-north-eastern-cuisine': [
       {
         question: 'What is the primary ingredient in "Momos," a popular Tibetan dumpling often enjoyed with spicy chutney?',
         options: [
@@ -301,6 +301,211 @@ export async function GET(request: Request) {
         answer: 'Unniyappam'
       },
     ]
+    ,
+    'west-indian-cuisine': [
+    {
+      question: 'Which ancient empire is said to have influenced the culinary traditions of Gujarat, a key part of West Indian cuisine?',
+      options: [
+        'Maurya Empire',
+        'Mughal Empire',
+        'Maratha Empire',
+        'Gupta Empire'
+      ],
+      answer: 'Maratha Empire'
+    },
+    {
+      question: 'What is the name of the famous Gujarati steamed snack made from fermented rice and chickpea batter?',
+      options: [
+        'Khandvi',
+        'Dhokla',
+        'Handvo',
+        'Fafda'
+      ],
+      answer: 'Dhokla'
+    },
+    {
+      question: 'Which of the following is a primary ingredient in the traditional Rajasthani dish "Dal Baati Churma"?',
+      options: [
+        'Wheat flour',
+        'Rice',
+        'Lentils',
+        'Chickpea flour'
+      ],
+      answer: 'Wheat flour'
+    },
+    {
+      question: 'What spicy Maharashtrian snack consists of puffed rice, onions, tomatoes, and sev?',
+      options: [
+        'Misal Pav',
+        'Bhel Puri',
+        'Vada Pav',
+        'Pav Bhaji'
+      ],
+      answer: 'Bhel Puri'
+    },
+    {
+      question: 'Which state in West India is known for its fusion of Portuguese and Indian flavors due to its colonial past?',
+      options: [
+        'Goa',
+        'Maharashtra',
+        'Gujarat',
+        'Rajasthan'
+      ],
+      answer: 'Goa'
+    },
+    {
+      question: 'What is a key ingredient in the famous Goan dish “Prawn Balchão”?',
+      options: [
+        'Tamarind',
+        'Coconut milk',
+        'Vinegar',
+        'Cardamom'
+      ],
+      answer: 'Vinegar'
+    },
+    {
+      question: 'Which dish, traditionally from Maharashtra, is made with mixed vegetables and is served with buttered bread rolls?',
+      options: [
+        'Pav Bhaji',
+        'Misal Pav',
+        'Sabudana Khichdi',
+        'Zunka Bhakri'
+      ],
+      answer: 'Pav Bhaji'
+    },
+    {
+      question: 'Which fruit is essential in making the Goan dish “Ambot Tik”?',
+      options: [
+        'Mango',
+        'Kokum',
+        'Tamarind',
+        'Jackfruit'
+      ],
+      answer: 'Kokum'
+    },
+    {
+      question: 'The Maharashtrian dish “Puran Poli” is commonly prepared during which festival?',
+      options: [
+        'Diwali',
+        'Holi',
+        'Gudi Padwa',
+        'Makar Sankranti'
+      ],
+      answer: 'Gudi Padwa'
+    },
+    {
+      question: 'Which of the following spices is a signature component in Maharashtrian Goda Masala?',
+      options: [
+        'Fennel seeds',
+        'Black sesame seeds',
+        'Coconut',
+        'Nutmeg'
+      ],
+      answer: 'Black sesame seeds'
+    }
+    ],
+    'beverages': [
+      {
+        question: 'What is the traditional South Indian beverage made from fermented rice and water, often served as a refreshing drink in coastal areas?',
+        options: [
+          'Rasam',
+          'Buttermilk',
+          'Coconut Water',
+          'Neer More'
+        ],
+        answer: 'Neer More'
+      },
+      {
+        question: 'Which popular North Indian drink is made from yogurt, spices, and sometimes fruits, and is often served chilled?',
+        options: [
+          'Lassi',
+          'Chaas',
+          'Sattu',
+          'Kachumber'
+        ],
+        answer: 'Chaas'
+      },
+      {
+        question: 'What is the name of the traditional Bengali drink made from fermented rice and known for its slightly sour taste?',
+        options: [
+          'Aam Panna',
+          'Pakhala',
+          'Tamarind Juice',
+          'Sattu'
+        ],
+        answer: 'Pakhala'
+      },
+      {
+        question: 'Which West Indian beverage is a popular street food item made from yogurt, chickpea flour, and spices, served cold?',
+        options: [
+          'Chaas',
+          'Shrikhand',
+          'Dahi Puri',
+          'Buttermilk'
+        ],
+        answer: 'Dahi Puri'
+      },
+      {
+        question: 'What is the traditional beverage from Tamil Nadu made by mixing buttermilk with spices and curry leaves, often consumed to aid digestion?',
+        options: [
+          'Lassi',
+          'Rasam',
+          'Pineapple Juice',
+          'Moru'
+        ],
+        answer: 'Moru'
+      },
+      {
+        question: 'What is the name of the North Indian drink made from roasted barley flour, water, and spices, often consumed for its health benefits?',
+        options: [
+          'Sattu',
+          'Thandai',
+          'Rasmalai',
+          'Kheer'
+        ],
+        answer: 'Sattu'
+      },
+      {
+        question: 'Which traditional Assamese drink is made from fermented rice or barley and is often consumed during festivals?',
+        options: [
+          'Bamboo Shoot Drink',
+          'Rice Beer',
+          'Chai',
+          'Buttermilk'
+        ],
+        answer: 'Rice Beer'
+      },
+      {
+        question: 'What is the name of the sweet and spiced beverage from Gujarat made from jaggery and often consumed during winter?',
+        options: [
+          'Petha',
+          'Jalebi',
+          'Chaas',
+          'Gur Ki Chai'
+        ],
+        answer: 'Gur Ki Chai'
+      },
+      {
+        question: 'Which traditional South Indian drink, often enjoyed during the hot summer months, is made from the juice of the tender coconut?',
+        options: [
+          'Nannari Sherbet',
+          'Tender Coconut Water',
+          'Rasam',
+          'Filter Coffee'
+        ],
+        answer: 'Tender Coconut Water'
+      },
+      {
+        question: 'What is the name of the traditional drink made from a mixture of milk, sugar, and various nuts, often enjoyed during festivals in North India?',
+        options: [
+          'Thandai',
+          'Lassi',
+          'Kheer',
+          'Chaas'
+        ],
+        answer: 'Thandai'
+      }
+    ],
   };
 
   const questions = allQuestions[category as keyof typeof allQuestions] || [];
