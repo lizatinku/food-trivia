@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';  // Import the Image component from Next.js
 
 const HomePage: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
@@ -55,12 +56,11 @@ const HomePage: React.FC = () => {
       <h1 style={{ margin: 0 }}>Welcome to the Indian Food Trivia!</h1>
       <div style={{ marginTop: '2rem' }}>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-          <img src="/images/idli.jpg" alt="Idli" style={{ width: '150px', height: 'auto', borderRadius: '10px' }} />
-          <img src="/images/chaat.jpg" alt="Chaat" style={{ width: '150px', height: 'auto', borderRadius: '10px' }} />
-          <img src="/images/kholasapori.jpg" alt="Khola Saporir" style={{ width: '150px', height: 'auto', borderRadius: '10px' }} />
-          <img src="/images/chole.jpg" alt="Chole" style={{ width: '150px', height: 'auto', borderRadius: '10px' }} />
+          <Image src="/images/idli.jpg" alt="Idli" width={150} height={150} style={{ borderRadius: '10px' }} />
+          <Image src="/images/chaat.jpg" alt="Chaat" width={150} height={150} style={{ borderRadius: '10px' }} />
+          <Image src="/images/kholasapori.jpg" alt="Khola Saporir" width={150} height={150} style={{ borderRadius: '10px' }} />
+          <Image src="/images/chole.jpg" alt="Chole" width={150} height={150} style={{ borderRadius: '10px' }} />
         </div>
-
         <p style={{ margin: '1rem 0' }}>
           Discover the rich and diverse world of Indian cuisine through our fun and engaging trivia quiz. Whether you're a foodie, a culinary adventurer, or just curious about the flavors of India, this quiz will take you on a flavorful journey across the subcontinent. Test your knowledge, learn new facts, and see how well you know from dosas to dal!
         </p>
