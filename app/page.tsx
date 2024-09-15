@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';  // Import the Image component from Next.js
+import Image from 'next/image';
 
 const HomePage: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
@@ -62,7 +62,7 @@ const HomePage: React.FC = () => {
           <Image src="/images/chole.jpg" alt="Chole" width={150} height={150} style={{ borderRadius: '10px' }} />
         </div>
         <p style={{ margin: '1rem 0' }}>
-          Discover the rich and diverse world of Indian cuisine through our fun and engaging trivia quiz. Whether you're a foodie, a culinary adventurer, or just curious about the flavors of India, this quiz will take you on a flavorful journey across the subcontinent. Test your knowledge, learn new facts, and see how well you know from dosas to dal!
+          Discover the rich and diverse world of Indian cuisine through our fun and engaging trivia quiz. Whether you&apos;re a foodie, a culinary adventurer, or just curious about the flavors of India, this quiz will take you on a flavorful journey across the subcontinent. Test your knowledge, learn new facts, and see how well you know from dosas to dal!
         </p>
         <p style={{ margin: '1rem 0' }}>
           Are you ready to spice up your knowledge?
