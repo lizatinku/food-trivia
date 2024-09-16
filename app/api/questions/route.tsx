@@ -199,7 +199,7 @@ export async function GET(request: Request) {
         answer: 'Yogurt'
       },
     ],
-    'desserts-and-sweets': [
+    'desserts': [
       {
         question: 'Which dessert is known for its syrup-soaked dough balls and is traditionally served warm?',
         options: [
@@ -505,7 +505,99 @@ export async function GET(request: Request) {
         ],
         answer: 'Thandai'
       }
-    ],
+      ],
+      'indo-western-fusion': [
+        {
+          question: 'Which fusion dish combines the traditional Indian masala with the classic American burger?',
+          options: [
+            'Paneer Tikka Burger',
+            'Masala Dosa Burger',
+            'Samosa Patty Burger',
+            'Butter Chicken Burger'
+          ],
+          answer: 'Butter Chicken Burger'
+        },
+        {
+          question: 'A popular Indo-Western dessert that blends the flavors of Gulab Jamun with what type of Western cake?',
+          options: [
+            'Cheesecake',
+            'Brownie',
+            'Pound Cake',
+            'Tres Leches Cake'
+          ],
+          answer: 'Cheesecake'
+        },
+        {
+          question: 'Which pasta dish is often combined with an Indian-inspired makhani sauce?',
+          options: [
+            'Spaghetti Carbonara',
+            'Penne Alfredo',
+            'Fusilli Arrabiata',
+            'Penne Makhani'
+          ],
+          answer: 'Penne Makhani'
+        },
+        {
+          question: 'A fusion pizza topped with what Indian dish became popular in urban areas?',
+          options: [
+            'Palak Paneer',
+            'Chicken Tikka',
+            'Aloo Gobi',
+            'Rajma'
+          ],
+          answer: 'Chicken Tikka'
+        },
+        {
+          question: 'Which Indo-Western street food merges nachos with a popular Indian snack?',
+          options: [
+            'Pani Puri Nachos',
+            'Chole Nachos',
+            'Bhel Nachos',
+            'Samosa Nachos'
+          ],
+          answer: 'Bhel Nachos'
+        },
+        {
+          question: 'Which Indian street food is reimagined into a taco in Indo-Western fusion cuisine?',
+          options: [
+            'Vada Pav',
+            'Chole Bhature',
+            'Aloo Tikki',
+            'Paneer Tikka'
+          ],
+          answer: 'Paneer Tikka'
+        },
+        {
+          question: 'What traditional Indian snack is wrapped in a tortilla to make an Indo-Mexican burrito?',
+          options: [
+            'Pakoras',
+            'Paneer Bhurji',
+            'Samosa',
+            'Masala Bhindi'
+          ],
+          answer: 'Samosa'
+        },
+        {
+          question: 'Which Indian bread is often used as the base for making Indo-Western pizzas?',
+          options: [
+            'Paratha',
+            'Naan',
+            'Kulcha',
+            'Chapati'
+          ],
+          answer: 'Naan'
+        },
+        {
+          question: 'Butter chicken is frequently paired with what kind of Western carbohydrate in fusion dishes?',
+          options: [
+            'Rice Noodles',
+            'Spaghetti',
+            'Garlic Bread',
+            'French Fries'
+          ],
+          answer: 'French'
+        }
+        ],
   };
 
   const questions = allQuestions[category as keyof typeof allQuestions] || [];

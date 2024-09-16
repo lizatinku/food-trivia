@@ -29,11 +29,14 @@ const CategoriesPage: React.FC = () => {
         <button onClick={() => startCategoryQuiz('west-indian-cuisine')} className="neon-button">
           West Indian Cuisine
         </button>
-        <button onClick={() => startCategoryQuiz('desserts-and-sweets')} className="neon-button">
-          Desserts and Sweets
+        <button onClick={() => startCategoryQuiz('desserts')} className="neon-button">
+          Desserts
         </button>
         <button onClick={() => startCategoryQuiz('beverages')} className="neon-button">
           Beverages
+        </button>
+        <button onClick={() => startCategoryQuiz('indo-western-fusion')} className="neon-button">
+          Indo-Western Fusion
         </button>
       </div>
     </div>
