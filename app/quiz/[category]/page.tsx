@@ -1,7 +1,29 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import Question from "@/components/Question";
+
+interface QuestionProps {
+  question: string;
+  options: string[];
+  onSelect: (option: string) => void;
+}
+
+const Question: React.FC<QuestionProps> = ({ question, options, onSelect }) => {
+  return (
+    <div>
+      <h2>{question}</h2>
+      <ul style={{ listStyle: "none", padding: 0 }}>
+        {options.map((option, index) => (
+          <li key={index} style={{ margin: "0.5rem 0" }}>
+            <button onClick={() => onSelect(option)} className="button">
+              {option}
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 interface QuestionData {
   question: string;
@@ -70,11 +92,26 @@ const Quiz: React.FC = () => {
   };
 
   return (
-    <div className="container" style={{ textAlign: "center", padding: "2rem", backgroundColor: "#046A38", color: "tan", margin: "0 auto", maxWidth: "800px", boxSizing: "border-box" }}>
+    <div
+      className="container"
+      style={{
+        textAlign: "center",
+        padding: "2rem",
+        backgroundColor: "#046A38",
+        color: "tan",
+        margin: "0 auto",
+        maxWidth: "800px",
+        boxSizing: "border-box",
+      }}
+    >
       <h1 style={{ margin: "0 0 1rem 0" }}>Quiz: {displayCategory}</h1>
 
       {!quizStarted ? (
-        <button className="neon-button" onClick={() => setQuizStarted(true)} style={{ margin: "1rem" }}>
+        <button
+          className="neon-button"
+          onClick={() => setQuizStarted(true)}
+          style={{ margin: "1rem" }}
+        >
           Start Quiz
         </button>
       ) : loading ? (
@@ -90,13 +127,21 @@ const Quiz: React.FC = () => {
             options={questions[currentIndex].options}
             onSelect={handleOptionClick}
           />
-          {feedback && <p>{feedback}</p>}
+          {feedback && <p style={{ marginTop: "1rem" }}>{feedback}</p>}
 
           <div className="button-container" style={{ marginTop: "1rem" }}>
-            <button className="button" onClick={previousQuestion} disabled={currentIndex === 0}>
+            <button
+              className="button"
+              onClick={previousQuestion}
+              disabled={currentIndex === 0}
+            >
               Previous
             </button>
-            <button className="button" onClick={nextQuestion} disabled={currentIndex === questions.length - 1}>
+            <button
+              className="button"
+              onClick={nextQuestion}
+              disabled={currentIndex === questions.length - 1}
+            >
               Next
             </button>
           </div>
