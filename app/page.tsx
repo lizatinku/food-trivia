@@ -39,11 +39,11 @@ const HomePage: React.FC = () => {
   };
 
   const goToLogin = () => {
-    router.push("/login");
+    router.push("/auth");
   };
 
   const goToSignUp = () => {
-    router.push("/signup");
+    router.push("/auth/signup");
   };
 
   if (loading) {
