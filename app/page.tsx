@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import "../styles/globals.css";
 
 const HomePage: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);

@@ -1,18 +1,18 @@
-/* Custom Properties for consistency if you ever need them */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --background: #046a38;
   --foreground: #f9f5eb;
 }
 
-/* Dark mode tweaks if needed */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #046a38;
     --foreground: #ededed;
   }
 }
-
-/* Base HTML & Body */
 body {
   margin: 0;
   padding: 0;
@@ -23,24 +23,20 @@ body {
   line-height: 1.6;
 }
 
-/* Remove default button styling (not needed if you're using Tailwind classes) */
 button {
   all: unset;
 }
 
-/* Ensure images are never stretched weirdly */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Optional: smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Optional: remove list style from ul by default (you can still override it per component) */
 ul {
   list-style: none;
   padding: 0;

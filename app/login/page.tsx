@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "../lib/supabase";
-//import google from "../google.png";
 
 const Login = () => {
   const router = useRouter();
@@ -26,62 +25,66 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[#4A7A63] px-4">
-      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md text-center">
-        <h2 className="text-2xl font-semibold text-[#4A7A63]">Welcome! Sign in to your account</h2>
-
-        {error && <p className="text-red-500 text-sm text-center mt-3">{error}</p>}
-
-        <div className="mt-6 text-left">
-          <label className="block text-sm font-medium text-gray-700">Email</label>
+    <div className="min-h-screen flex items-center justify-center bg-[#046A38] px-6">
+      <div className="bg-[#000000] p-10 rounded-2xl shadow-2xl w-full max-w-lg">
+        <h2 className="text-3xl font-extrabold text-[#F9F5EB] text-center mb-2">
+          Sign in to <span className="text-[#B3A369]">Indian Food Trivia</span>
+        </h2>
+  
+        {error && <p className="text-red-400 text-sm mt-3 text-center">{error}</p>}
+  
+        <div className="mt-6">
+          <label className="block text-sm font-medium text-[#F9F5EB] mb-1">Email</label>
           <input
             type="email"
             placeholder="Enter your email address"
-            className="mt-1 w-full p-3 border rounded-lg bg-[#F4F1DE] text-gray-900 focus:ring-2 focus:ring-[#4A7A63]"
+            className="w-full p-3 border border-[#B3A369] rounded-lg bg-[#f9f5eb]/10 text-[#F9F5EB] placeholder-[#F9F5EB]/60 focus:ring-2 focus:ring-[#B3A369]"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-
-        <div className="mt-4 text-left">
-          <label className="block text-sm font-medium text-gray-700">Password</label>
+  
+        <div className="mt-4">
+          <label className="block text-sm font-medium text-[#F9F5EB] mb-1">Password</label>
           <input
             type="password"
             placeholder="Enter your password"
-            className="mt-1 w-full p-3 border rounded-lg bg-[#F4F1DE] text-gray-900 focus:ring-2 focus:ring-[#4A7A63]"
+            className="w-full p-3 border border-[#B3A369] rounded-lg bg-[#f9f5eb]/10 text-[#F9F5EB] placeholder-[#F9F5EB]/60 focus:ring-2 focus:ring-[#B3A369]"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-
-        <div className="mt-3 text-right">
-          <a href="#" className="text-[#4A7A63] hover:underline text-sm">Forgot Password?</a>
+  
+        <div className="mt-2 text-right">
+          <a href="#" className="text-[#F9F5EB] hover:underline text-sm">
+            Forgot Password?
+          </a>
         </div>
-
-        <button 
-          onClick={handleLogin} 
-          className="mt-6 w-full bg-[#4A7A63] text-white py-3 rounded-lg hover:bg-[#E07A5F] transition"
+  
+        <button
+          onClick={handleLogin}
+          className="mt-6 w-full flex items-center justify-center bg-[#B3A369] text-[#046A38] py-3 rounded-full font-semibold shadow-md hover:bg-[#C4A76B] transition-transform transform hover:scale-105"
           disabled={loading}
         >
-          {loading ? "Loading..." : "NEXT"}
+          {loading ? "Loading..." : "Sign In"}
         </button>
-
+  
         <div className="flex items-center my-6">
-          <hr className="flex-grow border-gray-300" />
-          <span className="mx-3 text-gray-500">OR</span>
-          <hr className="flex-grow border-gray-300" />
+          <hr className="flex-grow border-[#F9F5EB]/30" />
+          <span className="mx-3 text-[#F9F5EB]/60 text-sm">OR</span>
+          <hr className="flex-grow border-[#F9F5EB]/30" />
         </div>
-
-        {/* <button 
+  
+        <button
           onClick={handleGoogleLogin}
-          className="w-full flex items-center justify-center border rounded-lg py-3 shadow-sm bg-white hover:bg-gray-100 transition"
+          className="w-full flex items-center justify-center gap-x-3 border border-gray-300 rounded-full py-3 shadow bg-[#1a1a1a] hover:bg-[#333] transition"
         >
-          <img src={google} alt="Google Logo" className="w-6 h-6 mr-3" />
-          <span className="text-gray-700 font-medium">Sign in with Google</span>
-        </button> */}
+          <img src="/google.png" alt="Google Logo" className="w-5 h-5" />
+          <span className="text-[#F9F5EB] font-medium text-sm">Sign in with Google</span>
+        </button>
       </div>
     </div>
-  );
-}
+  );  
+};
 
 export default Login;
