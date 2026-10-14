@@ -10,7 +10,8 @@ const allQuestions = {
         'Naan',
         'Paratha'
       ],
-      answer: 'Dosa'
+      answer: 'Dosa',
+      funFact: 'Dosa is often pronounced “DOH-suh”; in Tamil, dosai is often pronounced “DOH-sigh,” and “dosha” is a phonetic spelling some people use.'
     },
     {
       question: 'Which North Indian dish is a popular street food made with a spicy potato filling, chickpea curry, and tamarind chutney?',
@@ -20,7 +21,8 @@ const allQuestions = {
         'Pani Puri',
         'Kachori'
       ],
-      answer: 'Pani Puri'
+      answer: 'Pani Puri',
+      funFact: 'This snack goes by different names across India—including golgappa and puchka—and the fillings vary by region.'
     },
     {
       question: 'What is the primary ingredient in the traditional Indian dish "Dhokla"?',
@@ -30,7 +32,8 @@ const allQuestions = {
         'Chickpeas',
         'Fermented Rice Flour'
       ],
-      answer: 'Fermented Rice Flour'
+      answer: 'Fermented Rice Flour',
+      funFact: 'The name dhokla covers several Gujarati steamed snacks; versions can be made with chickpea flour, rice, or lentils.'
     },
     {
       question: 'Which Mughal emperor is credited with popularizing the biryani in India?',
@@ -40,7 +43,8 @@ const allQuestions = {
         'Aurangzeb',
         'Shah Jahan'
       ],
-      answer: 'Aurangzeb'
+      answer: 'Aurangzeb',
+      funFact: 'Kolkata biryani is often linked to Nawab Wajid Ali Shah, who was exiled to Calcutta in 1856. The city’s version is famous for its potato.'
     },
     {
       question: 'The dish "Vindaloo" originated from which country\'s cuisine and was adapted in Goa?',
@@ -50,7 +54,8 @@ const allQuestions = {
         'France',
         'Italy'
       ],
-      answer: 'Portugal'
+      answer: 'Portugal',
+      funFact: 'Goan vindaloo was influenced by a Portuguese dish made with wine and garlic; local cooks adapted it with ingredients such as vinegar and chilies.'
     },
     {
       question: 'Which Indian dish was historically known as "Khichdi" and was served to royal families as a humble yet nutritious meal?',
@@ -60,7 +65,8 @@ const allQuestions = {
         'Pulao',
         'Pongal'
       ],
-      answer: 'Khichdi'
+      answer: 'Khichdi',
+      funFact: 'There are many regional versions of khichdi, made with different grains, lentils, vegetables, and spices.'
     },
     {
       question: 'Which Indian dish, often associated with Kolkata, was created by Chinese immigrants in the 18th century?',
@@ -70,7 +76,8 @@ const allQuestions = {
         'Kathi Roll',
         'Puchka'
       ],
-      answer: 'Hakka Noodles'
+      answer: 'Hakka Noodles',
+      funFact: 'Kolkata’s Chinese communities helped shape the city’s popular Indo-Chinese food scene.'
     },
     {
       question: 'Which Indian dish is made with fermented rice and urad dal batter, steamed in a special mold, and is known for its unique texture and taste?',
@@ -80,7 +87,8 @@ const allQuestions = {
         'Sambhar',
         'Uttapam'
       ],
-      answer: 'Idli'
+      answer: 'Idli',
+      funFact: 'Fermenting the rice-and-lentil batter helps make idlis soft and fluffy.'
     },
     {
       question: 'The preparation of which Indian dish involves a cooking technique known as "dum", where the ingredients are cooked in their own juices under low heat for an extended period?',
@@ -90,7 +98,8 @@ const allQuestions = {
         'Dal Makhani',
         'Butter Chicken'
       ],
-      answer: 'Biryani'
+      answer: 'Biryani',
+      funFact: 'Biryani has many regional styles, each with its own combination of rice, spices, and other ingredients.'
     },
     {
       question: 'In which region of India did the use of mustard oil as a primary cooking fat originate, and which dish prominently features this ingredient?',
@@ -100,7 +109,8 @@ const allQuestions = {
         'Kerala - Avial',
         'Gujarat - Undhiyu'
       ],
-      answer: 'Punjab - Sarson Da Saag'
+      answer: 'Punjab - Sarson Da Saag',
+      funFact: 'This Punjabi winter dish is commonly served with makki di roti, a flatbread made from cornmeal.'
     }
   ],
   'eastern-and-north-eastern-cuisine': [
@@ -204,7 +214,8 @@ const allQuestions = {
         'Jalebi',
         'Barfi'
       ],
-      answer: 'Gulab Jamun'
+      answer: 'Gulab Jamun',
+      funFact: 'The fried milk-based dough balls soak up sweet syrup, often flavored with cardamom or rose.'
     },
     {
       question: 'Which Indian dessert is a type of rice pudding flavored with cardamom and often garnished with nuts and saffron?',
@@ -214,7 +225,8 @@ const allQuestions = {
         'Shrikhand',
         'Peda'
       ],
-      answer: 'Kheer'
+      answer: 'Kheer',
+      funFact: 'Rice pudding is enjoyed across South Asia, with local versions using different grains, flavorings, and toppings.'
     },
     {
       question: 'Which Indian dessert, made from milk and sugar, was first recorded in the 16th century in the region now known as Rajasthan?',
@@ -224,7 +236,8 @@ const allQuestions = {
         'Ghevar',
         'Peda'
       ],
-      answer: 'Ghevar'
+      answer: 'Ghevar',
+      funFact: 'This honeycomb-textured Rajasthani sweet is especially associated with the Teej festival.'
     },
     {
       question: 'What was the origin of the popular Bengali sweet "Rasgulla," which is believed to have been created in the 19th century in Bengal?',
@@ -234,7 +247,8 @@ const allQuestions = {
         'Developed during the Mughal era',
         'Originated from ancient Indian recipes'
       ],
-      answer: 'Created by the famous Bengali chef, Nobin Chandra Das'
+      answer: 'Created by the famous Bengali chef, Nobin Chandra Das',
+      funFact: 'Rasgullas are made from soft chhena—fresh curd cheese—cooked in sugar syrup.'
     },
     {
       question: 'Which traditional Indian dessert was first made in the 18th century by adding saffron and cardamom to sweetened milk, and has since become a staple at celebrations?',
@@ -244,7 +258,8 @@ const allQuestions = {
         'Sandesh',
         'Shrikhand'
       ],
-      answer: 'Kheer'
+      answer: 'Kheer',
+      funFact: 'A little cardamom is often used to give kheer its warm, fragrant flavor.'
     },
     {
       question: 'Which Indian dessert is made from sweetened curd, often flavored with fruits and nuts?',
@@ -254,7 +269,8 @@ const allQuestions = {
         'Rasmalai',
         'Sandesh'
       ],
-      answer: 'Shrikhand'
+      answer: 'Shrikhand',
+      funFact: 'Hung curd is strained to make shrikhand thick and creamy.'
     },
     {
       question: 'What is the main ingredient in "Peda," a dense milk-based sweet often flavored with cardamom or saffron?',
@@ -264,7 +280,8 @@ const allQuestions = {
         'Condensed Milk',
         'Rice Flour'
       ],
-      answer: 'Milk Powder'
+      answer: 'Milk Powder',
+      funFact: 'Peda recipes vary; many use khoya, while some quicker versions use milk powder.'
     },
     {
       question: 'Which Indian dessert was originally developed by the Mughal emperors and is said to have been served at their royal feasts?',
@@ -274,7 +291,8 @@ const allQuestions = {
         'Rasgulla',
         'Kheer'
       ],
-    answer: 'Gulab Jamun'
+    answer: 'Gulab Jamun',
+    funFact: 'The name is commonly explained as referring to rose-scented syrup and the jamun fruit’s round shape.'
     },
     {
       question: 'Which dessert, popular in the northern regions of India, is made from sweetened milk and flavored with saffron, often served during special occasions?',
@@ -284,7 +302,8 @@ const allQuestions = {
         'Rabri',
         'Moong Dal Halwa'
       ],
-      answer: 'Rabri'
+      answer: 'Rabri',
+      funFact: 'Rabri is made by slowly simmering milk and collecting the creamy layers that form on top.'
     },
     {
       question: 'Which traditional Kerala sweet is made from jaggery, coconut, and rice flour, often served during festivals?',
@@ -294,7 +313,8 @@ const allQuestions = {
         'Ada Pradhaman',
         'Puttu'
       ],
-      answer: 'Unniyappam'
+      answer: 'Unniyappam',
+      funFact: 'These Kerala sweet fritters often combine rice flour, banana, and jaggery.'
     },
   ]
   ,

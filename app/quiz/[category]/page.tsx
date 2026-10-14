@@ -10,6 +10,7 @@ interface QuestionProps {
   totalQuestions: number;
   selectedOption: string | null;
   feedback: string | null;
+  funFact?: string;
   onSelect: (option: string) => void;
   onPrevious: () => void;
   onNext: () => void;
@@ -25,6 +26,7 @@ const Question: React.FC<QuestionProps> = ({
   totalQuestions,
   selectedOption,
   feedback,
+  funFact,
   onSelect,
   onPrevious,
   onNext,
@@ -32,7 +34,6 @@ const Question: React.FC<QuestionProps> = ({
   canGoNext,
 }) => {
   const isCorrect = feedback?.startsWith("✅") ?? false;
-  const isIncorrect = feedback !== null && !isCorrect;
 
   return (
     <section className="question-card" aria-label="Current question">
@@ -78,7 +79,11 @@ const Question: React.FC<QuestionProps> = ({
           <div>
             <p className="feedback-title">{isCorrect ? "Correct!" : "Not quite"}</p>
             <p className="feedback-message">
-              {isCorrect ? "Great job!" : feedback.replace("❌ Wrong! ", "")}
+              {isCorrect
+                ? funFact
+                  ? `Did you know? ${funFact}`
+                  : "Great job!"
+                : feedback.replace("❌ Wrong! ", "")}
             </p>
           </div>
         </div>
@@ -371,6 +376,7 @@ interface QuestionData {
   question: string;
   options: string[];
   answer: string;
+  funFact?: string;
 }
 
 const Quiz: React.FC = () => {
@@ -394,7 +400,7 @@ const Quiz: React.FC = () => {
           }
           const data: QuestionData[] = await response.json();
           setQuestions(data);
-        } catch (err) {
+        } catch {
           setError("Failed to fetch questions");
         } finally {
           setLoading(false);
@@ -465,6 +471,7 @@ const Quiz: React.FC = () => {
             totalQuestions={questions.length}
             selectedOption={selectedOption}
             feedback={feedback}
+            funFact={questions[currentIndex].funFact}
             onSelect={handleOptionClick}
             onPrevious={previousQuestion}
             onNext={nextQuestion}

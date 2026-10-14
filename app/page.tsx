@@ -39,18 +39,20 @@ const HomePage: React.FC = () => {
   return (
     <>
       <div
-        className="container"
+        className="home-page"
         style={{
           textAlign: "center",
           padding: "2rem",
           backgroundColor: "#046A38",
           color: "#F9F5EB",
-          margin: 0,
+          margin: "0 auto",
+          width: "100%",
+          boxSizing: "border-box",
         }}
       >
         <h1
           style={{
-            margin: "0rem 0rem 0.5rem 5rem",
+            margin: "0 auto 0.5rem",
             fontSize: "2.8rem",
             fontWeight: "bold",
             color: "#F9F5EB",
@@ -59,7 +61,7 @@ const HomePage: React.FC = () => {
           Welcome to the Indian Food Trivia!
         </h1>
 
-        <div style={{ marginTop: "4rem 0 0 10rem" }}>
+        <div style={{ marginTop: "4rem" }}>
           <div style={{ display: "flex", justifyContent: "center", gap: "1rem", flexWrap: "wrap" }}>
             <Image src="/images/idli.jpg" alt="Idli" width={250} height={250} style={{ borderRadius: "10px" }} />
             <Image src="/images/chaat.jpg" alt="Chaat" width={250} height={250} style={{ borderRadius: "10px" }} />
@@ -70,7 +72,7 @@ const HomePage: React.FC = () => {
           <div className="mt-16 ml-0 mr-8" style={{ marginTop: "2rem", maxWidth: "850px", margin: "2rem auto" }}>
             <p>
               Discover the rich and diverse world of Indian cuisine through our fun and engaging trivia quiz.
-              Whether you're a foodie, a culinary adventurer, or just curious about the flavors of India, this quiz
+              Whether you&apos;re a foodie, a culinary adventurer, or just curious about the flavors of India, this quiz
               will take you on a flavorful journey across the subcontinent.
             </p>
             <p>Are you ready to spice up your knowledge?</p>
@@ -90,21 +92,13 @@ const HomePage: React.FC = () => {
               }}
             >
               <h2>Select a Category</h2>
-              <div
-                style={{
-                  display: "flex",
-                  flexWrap: "wrap",
-                  justifyContent: "center",
-                  gap: "1rem",
-                  marginTop: "1rem",
-                }}
-              >
-                <button onClick={() => startCategoryQuiz("popular-dishes")} className="neon-button">Popular Dishes</button>
-                <button onClick={() => startCategoryQuiz("eastern-and-north-eastern-cuisine")} className="neon-button">Eastern and North Eastern Cuisine</button>
-                <button onClick={() => startCategoryQuiz("west-indian-cuisine")} className="neon-button">West Indian Cuisine</button>
-                <button onClick={() => startCategoryQuiz("desserts")} className="neon-button">Desserts</button>
-                <button onClick={() => startCategoryQuiz("beverages")} className="neon-button">Beverages</button>
-                <button onClick={() => startCategoryQuiz("indo-western-fusion")} className="neon-button">Indo-Western Fusion</button>
+              <div className="category-grid">
+                <button onClick={() => startCategoryQuiz("popular-dishes")} className="category-button">Popular Dishes</button>
+                <button onClick={() => startCategoryQuiz("desserts")} className="category-button">Desserts</button>
+                <button onClick={() => startCategoryQuiz("eastern-and-north-eastern-cuisine")} className="category-button">Eastern and North Eastern Cuisine</button>
+                <button onClick={() => startCategoryQuiz("beverages")} className="category-button">Beverages</button>
+                <button onClick={() => startCategoryQuiz("west-indian-cuisine")} className="category-button">West Indian Cuisine</button>
+                <button onClick={() => startCategoryQuiz("indo-western-fusion")} className="category-button">Indo-Western Fusion</button>
               </div>
             </div>
           )}
@@ -124,6 +118,45 @@ const HomePage: React.FC = () => {
             font-weight: 600;
             text-shadow: 0 0 5px #0fa, 0 0 10px #0fa, 0 0 15px #0fa, 0 0 20px #0fa;
             animation: flicker 1.5s infinite alternate;
+          }
+
+          .category-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+            width: min(100%, 900px);
+            margin: 1rem auto 0;
+          }
+
+          .category-button {
+            min-height: 56px;
+            padding: 0.45rem 0.65rem;
+            border: 2px solid rgba(249, 245, 235, 0.75);
+            border-radius: 8px;
+            background: #f9f5eb;
+            color: #046a38;
+            cursor: pointer;
+            font-size: clamp(1.1rem, 1.5vw, 1.25rem);
+            font-weight: 700;
+            text-align: center;
+            transition: background-color 150ms ease, transform 150ms ease;
+          }
+
+          .category-button:hover {
+            transform: translateY(-2px);
+            background: #e8f0e9;
+          }
+
+          @media (max-width: 600px) {
+            .category-grid {
+              gap: 0.65rem;
+            }
+
+            .category-button {
+              min-height: 50px;
+              padding: 0.35rem 0.45rem;
+              font-size: 1rem;
+            }
           }
 
           @keyframes flicker {
