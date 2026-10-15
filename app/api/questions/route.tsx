@@ -22,7 +22,7 @@ const allQuestions = {
         'Kachori'
       ],
       answer: 'Pani Puri',
-      funFact: 'This snack goes by different names across India—including golgappa and puchka—and the fillings vary by region.'
+      funFact: 'This snack goes by different names across India including golgappa and puchka and the fillings vary by region.'
     },
     {
       question: 'What is the primary ingredient in the traditional Indian dish "Dhokla"?',
